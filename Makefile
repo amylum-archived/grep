@@ -12,17 +12,20 @@ PACKAGE_VERSION = $$(git --git-dir=upstream/.git describe --tags | sed 's/v//')
 PATCH_VERSION = $$(cat version)
 VERSION = $(PACKAGE_VERSION)-$(PATCH_VERSION)
 
-.PHONY : default submodule deps manual container deps build version push local
+.PHONY : default submodule deps manual build_container container deps build version push local
 
 default: submodule container
 
 submodule:
 	git submodule update --init
 
-manual: submodule
+manual: submodule build_container
 	./meta/launch /bin/bash || true
 
-container:
+build_container:
+	docker build -t tenyks-pkg meta
+
+container: build_container
 	./meta/launch
 
 deps:
