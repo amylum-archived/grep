@@ -23,7 +23,7 @@ manual: submodule build_container
 	./meta/launch /bin/bash || true
 
 build_container:
-	docker build -t tenyks-pkg meta
+	docker build -t grep-pkg meta
 
 container: build_container
 	./meta/launch
