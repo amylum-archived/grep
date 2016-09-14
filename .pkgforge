@@ -1,0 +1,21 @@
+name 'grep'
+org 'amylum'
+
+licenses 'COPYING'
+
+configure_flags(
+  prefix: '/usr'
+)
+
+harden
+
+build do
+  run './bootstrap'
+  configure
+  make
+  install
+end
+
+test do
+  run 'grep --version'
+end
