@@ -1,7 +1,7 @@
 grep
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/grep.svg)](https://circleci.com/gh/amylum/grep)
+[![Build Status](https://img.shields.io/circleci/project/amylum/grep/master.svg)](https://circleci.com/gh/amylum/grep)
 [![GitHub release](https://img.shields.io/github/release/amylum/grep.svg)](https://github.com/amylum/grep/releases)
 [![GPL3 Licensed](http://img.shields.io/badge/license-GPL3-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))
 
