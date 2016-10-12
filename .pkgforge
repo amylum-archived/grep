@@ -7,7 +7,6 @@ configure_flags(
   prefix: '/usr'
 )
 
-cflags(['-Werror=unused-macros'])
 harden
 
 build do
