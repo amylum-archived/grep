@@ -8,8 +8,11 @@ configure_flags(
 )
 
 harden
-cflags ["-Wno-error=unused-macros"]
-cflags ["-Wno-error=suggest-attribute=noreturn"]
+cflags [
+  "-Wno-error=unused-macros",
+  "-Wno-error=suggest-attribute=noreturn",
+  "-Wno-error=implicit-fallthrough="
+]
 
 build do
   run './bootstrap'
