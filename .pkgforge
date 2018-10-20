@@ -11,7 +11,8 @@ harden
 cflags [
   "-Wno-error=unused-macros",
   "-Wno-error=suggest-attribute=noreturn",
-  "-Wno-error=implicit-fallthrough="
+  "-Wno-error=implicit-fallthrough=",
+  "-Wno-error=abi"
 ]
 
 build do
