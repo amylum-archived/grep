@@ -12,7 +12,8 @@ cflags [
   "-Wno-error=unused-macros",
   "-Wno-error=suggest-attribute=noreturn",
   "-Wno-error=implicit-fallthrough=",
-  "-Wno-error=abi"
+  "-Wno-error=abi",
+  "-Wno-error=unused-const-variable"
 ]
 
 build do
